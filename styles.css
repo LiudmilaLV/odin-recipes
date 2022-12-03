@@ -1,11 +1,21 @@
 body {
     font-family: 'Open Sans', 'PT Sans', Calibri, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.main-container {
+.page {
+    display: flex;
+    flex-wrap: wrap;
     border-radius: 5px;
-    width: 50%;
     text-align: center;
+}
+
+.section {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 h1,h2 {
@@ -17,17 +27,15 @@ a {
     text-decoration: none;
 }
 
-.pic {
-    height: 200px;
+.image {
+    max-height: 120px;
     width: auto;
     border-radius: 5px;
 }
 
 ul {
-    text-align: center;
-    list-style-position: inside;
     list-style: none;
-    padding-left: 0;
+    text-align: start;
 }
 
 ol {
