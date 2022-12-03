@@ -1,4 +1,4 @@
-body {
+* {
     font-family: 'Open Sans', 'PT Sans', Calibri, sans-serif;
     margin: 0;
     padding: 0;
@@ -13,9 +13,19 @@ body {
 }
 
 .section {
+    margin: 10px 0;
     width: 100%;
     justify-content: center;
     align-items: center;
+}
+
+.section.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section > ul > li {
+    margin: 5px 0;
 }
 
 h1,h2 {
@@ -35,9 +45,15 @@ a {
 
 ul {
     list-style: none;
-    text-align: start;
 }
 
 ol {
     text-align: start;
+}
+
+@media only screen and (min-width: 769px) {
+    .page {
+    width: 768px;
+    margin: 0 auto;
+    }
 }
