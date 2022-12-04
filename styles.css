@@ -49,11 +49,36 @@ ul {
 
 ol {
     text-align: start;
+    padding-left: 20px;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 401px) and (max-width: 538px) {
     .page {
-    width: 768px;
+    width: 400px;
+    margin: 0 auto;
+    }
+
+    .ingredients,
+    .recipe {
+    width: 50%;
+    }
+}
+
+@media only screen and (min-width: 539px) and (max-width: 960px) {
+    .page {
+    width: 539px;
+    margin: 0 auto;
+    }
+
+    .ingredients,
+    .recipe {
+    width: 50%;
+    }
+}
+
+@media only screen and (min-width: 961px) {
+    .page {
+    width: 960px;
     margin: 0 auto;
     }
 }
