@@ -1,5 +1,5 @@
 * {
-    font-family: 'Open Sans', 'PT Sans', Calibri, sans-serif;
+    font-family: 'Open Sans', 'PT Sans', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,13 +8,14 @@
 .page {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     border-radius: 5px;
     text-align: center;
 }
 
 .section {
     margin: 10px 0;
-    width: 100%;
+    flex: 1;
     justify-content: center;
     align-items: center;
 }
@@ -57,22 +58,12 @@ ol {
     width: 400px;
     margin: 0 auto;
     }
-
-    .ingredients,
-    .recipe {
-    width: 50%;
-    }
 }
 
 @media only screen and (min-width: 539px) and (max-width: 960px) {
     .page {
     width: 539px;
     margin: 0 auto;
-    }
-
-    .ingredients,
-    .recipe {
-    width: 50%;
     }
 }
 
