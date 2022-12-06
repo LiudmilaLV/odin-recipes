@@ -29,13 +29,20 @@ h1,h2 {
     font-family: 'Helvetica Neue', Helvetica, sans-serif;
 }
 
+p {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.3em;
+}
+
 a {
     color: #000000;
     text-decoration: none;
 }
 
-.image {
-    border-radius: 5px;
+.section > .image > img {
+    border-radius: 120px;
 }
 
 ul {
@@ -62,7 +69,7 @@ li {
 
 @media only screen and (min-width: 539px) and (max-width: 960px) {
     .page {
-    width: 539px;
+    width: 538px;
     margin: 0 auto;
     }
 }
@@ -73,21 +80,15 @@ li {
     margin: 0 auto;
     }
 
+    .section.discription,
     .together-on-wide {
         display: flex;
-        margin: 20px 0;
+        margin-top: 10px;
         gap: 2rem;
     }
     
-    .recipe {
+    .together-on-wide > .recipe {
         flex: 2;
-    }
-
-    .section.discription {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
     }
 
     .section.discription > .image {
@@ -96,6 +97,7 @@ li {
 
     .section.discription > p {
         flex: 2;
+        line-height: 1.5em;
     }
 
 }
